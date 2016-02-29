@@ -1,0 +1,95 @@
+.wrapper {
+  width: 1440px;
+  height: 798px;
+  background-color: #efefef;
+  padding-top: 4px;
+}
+
+.profile {
+  width: 512px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 1px 2px rgba(227,220,227,1);
+  background-color: #ffffff;
+}
+
+p {
+  font: 18px Trebuchet;
+  letter-spacing: -0.3px;
+  text-indent: 13px;
+}
+
+/* Profile picture */
+
+.profile_pic {
+  width: 412px;
+  height: 245px;
+  margin: 0 auto;
+  padding-top: 28px;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto;
+}
+
+.student {
+  margin-top: 10px;
+}
+
+/* Profile info*/
+
+.info {
+  width: 412px;
+  height: 154px;
+  margin: 0 auto;
+  padding: 7px 0;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+ul {
+  padding: 8px 37px;
+}
+
+li {
+  margin: 5px 0;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+/* Contacts */
+
+.contacts {
+  width: 412px;
+  height: 155px;
+  margin: 0 auto;
+  padding-top: 12px;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+.contacts p {
+  line-height: 10px;
+}
+
+.contacts p:nth-child(3) {
+  padding-top: 20px;
+}
+
+/* Feedback */
+
+.feedback {
+  width: 412px;
+  height: 128px;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+
+.feedback p {
+  line-height: 10px;
+}

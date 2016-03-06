@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/background.png);
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,1);
+}
+
+/* Header */
+
+.logo {
+  width: 500px;
+  float: left;
+  padding: 13px 0 0 30px;
+}
+
+.contacts {
+  width: 200px;
+  float: right;
+  padding-top: 10px;
+}
+
+.contacts p:first-child {
+  font-weight: bold;
+}
+
+.contacts p {
+  color: #6eacc0;
+  font: 14px Arial;
+  line-height: 18px;
+}
+
+.contries {
+  width: 390px;
+  float: right;
+  padding-top: 25px;
+}
+
+.photo_menu {
+  display: block;
+  float: left;
+  width: 60px;
+  padding-top: 40px;
+  color: #6eacc0;
+  font: 11px Arial;
+  text-align: center;
+}
+
+.india {
+  background: url(../img/india.png) no-repeat 50% 0;
+}
+
+.nepal {
+  background: url(../img/nepal.png) no-repeat 50% 0;
+}
+
+.tibet {
+  background: url(../img/tibet.png) no-repeat 50% 0;
+}
+
+.bhutan {
+  background: url(../img/bhutan.png) no-repeat 50% 0;
+}
+
+.sri_lanka {
+  background: url(../img/sri_lanka.png) no-repeat 50% 0;
+}
+
+.maldives {
+  background: url(../img/maldives.png) no-repeat 50% 0;
+}
+
+/* Menu*/
+
+.menu {
+  width: 1000px;
+  position: relative;;
+  background: url(../img/panel.png);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.menu li {
+  float: left;
+  position: relative;
+  padding: 0 30px;
+  line-height: 30px;
+}
+
+.menu li a {
+  display: inline-block;
+  font: 14px Arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown_travel {
+  width: 95px;
+  background: url(../img/triangle.png) no-repeat 100% 50%;
+}
+
+.dropdown_service {
+  width: 53px;
+  background: url(../img/triangle.png) no-repeat 100% 50%;
+}
+
+.dropdown_partners {
+  width: 83px;
+  background: url(../img/triangle.png) no-repeat 100% 50%;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 120px;
+  top: 29px;
+  left: 30px;
+  background: url(../img/dropdown.png);
+}
+
+.submenu li {
+  display: block;
+  padding: 5px 10px;
+}
+
+.submenu li a {
+  display: block;
+  font: 14px Arial;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* Content */
+
+.content {
+  width: 1000px;
+  overflow: hidden;
+  color: #424c43;
+  font: 14px Arial;
+  line-height: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  float: left;
+  padding: 5px 0 0 15px;
+  background: #edeef0;
+  border-right: 1px solid #c7cacf;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+
+.sidebar p:first-child {
+  font: 18px Arial;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text {
+  width: 600px;
+  float: left;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+
+.news {
+  width: 200px;
+  float: right;
+  padding: 5px 0 0 15px;
+  background: #edeef0;
+  border-left: 1px solid #c7cacf;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+
+.news p:first-child {
+  font: 18px Arial;
+  font-weight: bold;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  font: 12px Arial;
+  color: #ffffff;
+}

@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url(../img/background.png);
+  background: url(../img/background.png) repeat-x top center #0C75A0;
 }
 
 ul {
@@ -45,97 +45,83 @@ ul {
 .contries {
   width: 390px;
   float: right;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
-.photo_menu {
-  display: block;
+.contries li {
   float: left;
-  width: 60px;
-  padding-top: 40px;
-  color: #6eacc0;
-  font: 11px Arial;
   text-align: center;
 }
 
-.india {
-  background: url(../img/india.png) no-repeat 50% 0;
-}
-
-.nepal {
-  background: url(../img/nepal.png) no-repeat 50% 0;
-}
-
-.tibet {
-  background: url(../img/tibet.png) no-repeat 50% 0;
-}
-
-.bhutan {
-  background: url(../img/bhutan.png) no-repeat 50% 0;
-}
-
-.sri_lanka {
-  background: url(../img/sri_lanka.png) no-repeat 50% 0;
-}
-
-.maldives {
-  background: url(../img/maldives.png) no-repeat 50% 0;
+.contries li a {
+  display: block;
+  width: 60px;
+  color: #6eacc0;
+  font: 11px Arial;
 }
 
 /* Menu*/
 
 .menu {
   width: 1000px;
-  position: relative;;
+  position: relative;
   background: url(../img/panel.png);
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
 }
 
+/*.menu li {
+  float: left;
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 0 30px;
+  line-height: 30px;
+  font: 14px Arial;
+  color: #ffffff;
+  text-decoration: none;
+}*/
+
 .menu li {
   float: left;
   position: relative;
-  padding: 0 30px;
   line-height: 30px;
 }
 
 .menu li a {
   display: inline-block;
+  padding: 0 30px;
   font: 14px Arial;
   color: #ffffff;
   text-decoration: none;
 }
 
-.dropdown_travel {
-  width: 95px;
-  background: url(../img/triangle.png) no-repeat 100% 50%;
+.dropdown_travel:after {
+  content: url(../img/triangle.png);
+  padding-left: 5px;
 }
 
-.dropdown_service {
-  width: 53px;
-  background: url(../img/triangle.png) no-repeat 100% 50%;
+.dropdown_service:after {
+  content: url(../img/triangle.png);
+  padding-left: 5px;
 }
 
-.dropdown_partners {
-  width: 83px;
-  background: url(../img/triangle.png) no-repeat 100% 50%;
+.dropdown_partners:after {
+  content: url(../img/triangle.png);
+  padding-left: 5px;
 }
 
 .submenu {
   display: none;
   position: absolute;
-  width: 120px;
   top: 29px;
-  left: 30px;
   background: url(../img/dropdown.png);
-}
-
-.submenu li {
-  display: block;
-  padding: 5px 10px;
 }
 
 .submenu li a {
   display: block;
+  padding: 5px 10px;
   font: 14px Arial;
 }
 
@@ -147,7 +133,7 @@ ul {
 
 .content {
   width: 1000px;
-  overflow: hidden;
+  background: url(../img/content_img.png) repeat-y;
   color: #424c43;
   font: 14px Arial;
   line-height: 20px;
@@ -157,10 +143,6 @@ ul {
   width: 200px;
   float: left;
   padding: 5px 0 0 15px;
-  background: #edeef0;
-  border-right: 1px solid #c7cacf;
-  padding-bottom: 20000px;
-  margin-bottom: -20000px;
 }
 
 .sidebar p:first-child {
@@ -172,18 +154,12 @@ ul {
 .text {
   width: 600px;
   float: left;
-  padding-bottom: 20000px;
-  margin-bottom: -20000px;
 }
 
 .news {
   width: 200px;
   float: right;
   padding: 5px 0 0 15px;
-  background: #edeef0;
-  border-left: 1px solid #c7cacf;
-  padding-bottom: 20000px;
-  margin-bottom: -20000px;
 }
 
 .news p:first-child {

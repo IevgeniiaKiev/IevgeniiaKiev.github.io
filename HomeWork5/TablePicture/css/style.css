@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 5px solid black;
+  width: 45px;
+  height: 45px;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.red {
+  background: red;
+}
+
+.black {
+  background: #0d0d0d;
+}
+
+.blue {
+  background: blue;
+}
+
+.height {
+  height: 90px;
+}
+
+.width {
+  width: 90px;
+}

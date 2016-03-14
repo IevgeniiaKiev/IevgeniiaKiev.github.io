@@ -15,9 +15,7 @@
 }
 
 body {
-  position: relative;
-  height: 1029px;
-  background: url(../img/background.png);
+  background: url(../img/background.jpg) no-repeat;
   background-size: cover;
   font-family: 'Helvetica Neueregular', sans-serif;
 }
@@ -34,7 +32,6 @@ ul {
 }
 
 .menu {
-  width: 395px;
   float: right;
 }
 
@@ -56,30 +53,25 @@ ul {
 }
 
 .my_offers {
-  width: 160px;
+  display: block;
   float: right;
+  color: #ffffff;
+  line-height: 35px;
   border-left: 1px solid #56a2dc;
 }
 
-.my_offers a {
-  display: block;
-  line-height: 35px;
-  padding: 0 5px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.my_offers a:before {
+.my_offers:before {
   content: url(../img/flag.png);
-  padding: 0 5px 0 15px;
+  height: 25px;
+  float: left;
+  padding: 6px 5px 0 15px;
 }
 
 .entrance {
-  width: 178px;
   float: right;
   padding: 0 10px;
-  margin-right: 20px;
-  background: url(../img/fon.png);
+  margin: 0 20px 0 10px;
+  background: linear-gradient(to top, #2e7ac4, #50afdc);
 }
 
 .entrance p {
@@ -102,6 +94,11 @@ ul {
 
 /*Main content*/
 
+.main {
+  position: relative;
+  height: 1028px;
+}
+
 .content {
   width: 500px;
   height: 558px;
@@ -119,13 +116,6 @@ ul {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.facebook_button {
-  width: 276px;
-  height: 35px;
-  border: none;
-  background: url(../img/facebook_log.png);
-}
-
 .register_form {
   width: 500px;
   background: rgba(0, 0, 0, 0.6);
@@ -137,6 +127,39 @@ ul {
   padding: 25px 0;
 }
 
+.facebook_button {
+  display: block;
+  position: relative;
+  line-height: 35px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background: #354f8c;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.facebook_button:before {
+ content: "f";
+ position: absolute;
+ left: 20px;
+ font-size: 25px;
+ padding-right: 20px;
+ border-right: 1px solid #1d3c73;
+ box-shadow: 1px 0px 0px 0px rgba(77,102,166,1);
+}
+
+.facebook_button:after {
+ content: ">";
+ position: absolute;
+ right: 20px;
+ font-size: 15px;
+}
+
 .ou {
   width: 280px;
   margin: 0 auto;
@@ -146,11 +169,21 @@ ul {
 }
 
 .ou p:before {
-  content: url(../img/line.png);
+  content: " ";
+  width: 123px;
+  height: 3px;
+  display: inline-block;
+  background: url(../img/line.png) no-repeat;
+  padding-bottom: 5px;
 }
 
 .ou p:after {
-  content: url(../img/line.png);
+  content: " ";
+  width: 123px;
+  height: 3px;
+  display: inline-block;
+  background: url(../img/line.png) no-repeat;
+  padding-bottom: 5px;
 }
 
 /* Form */
@@ -187,9 +220,11 @@ label {
 .account {
   width: 151px;
   height: 37px;
-  background: url(../img/button.png);
+  background: linear-gradient(to top, #2e7ac4, #4faddb);
   border: none;
+  border-radius: 4px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .footer {

@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-  width: 950px;
+  width: 910px;
   margin: 0 auto;
 }
 
@@ -60,6 +60,16 @@ input[type="password"] {
   letter-spacing: 0.5px;
 }
 
+.form_login input[type="button"] {
+  padding: 0 7px 0 3px;
+  background: linear-gradient(to top, #0e375b, #1f6787);
+  border: none;
+  border-right: 1px solid #ffffff;
+  font: 11px Arial, sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .field_login a {
   float: left;
   display: block;
@@ -69,23 +79,18 @@ input[type="password"] {
   color: #ffffff;
 }
 
-.entrance {
-  padding: 0 6px 0 8px;
-  border-right: 1px solid #ffffff;
-}
-
 .register {
   padding-left: 5px;
   letter-spacing: 0.3px;
 }
 
-.forgot {
+.field_login .forgot {
+  float: right;
+  padding-right: 10px;
   letter-spacing: 0.9px;
 }
 
-.field_login a:last-child {
-  float: right;
-  padding-right: 10px;
+.forgot:hover {
   text-decoration: underline;
   color: #bfbfbf;
 }
@@ -117,7 +122,6 @@ input[type="password"] {
 .main_picture {
   width: 909px;
   height: 237px;
-  background: url(../img/blick.jpg) no-repeat;
 }
 
 /*MENU*/
@@ -458,13 +462,17 @@ input[type="password"] {
   line-height: 25px;
 }
 
-.tire_left {
+.left ul {
+  list-style: none;
+}
+
+.tire_left span {
+  display: block;
   width: 118px;
   margin-top: 13px;
   padding-left: 30px;
   font: 13px "Lucida Sans Unicode", sans-serif;
   color: #114165;
-  list-style: none;
   line-height: 25px;
   border: 1px solid #79878d;
   border-radius: 10px;
@@ -491,13 +499,13 @@ input[type="password"] {
    text-decoration: underline;
  }
 
- .disc_left {
+ .disc_left span {
+   display: block;
    width: 118px;
    margin-top: 1px;
    padding-left: 30px;
    font: 13px "Lucida Sans Unicode", sans-serif;
    color: #114165;
-   list-style: none;
    line-height: 25px;
    border: 1px solid #79878d;
    border-radius: 10px;
@@ -510,7 +518,7 @@ input[type="password"] {
   width: 527px;
   float: left;
   margin: 2px 7px 0 0;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
   background: linear-gradient(to top, #93a7b0, #e4e7e8);
   text-align: center;
 }
@@ -527,39 +535,29 @@ input[type="password"] {
   border-radius: 10px;
 }
 
-.tire1 {
+.tire {
   width: 137px;
   float: left;
-  margin: 8px 0 7px 23px;
-}
-
-.tire2 {
-  width: 137px;
-  float: left;
-  margin: 8px 0 7px 29px;
-}
-
-.tire3 {
-  width: 137px;
-  float: left;
-  margin: 8px 0 7px 33px;
+  margin: 15px 10px 5px 21px;
 }
 
 .marka {
-  padding-top: 12px;
+  text-decoration: none;
   font: 16px Arial, sans-serif;
   color: #206988;
   font-weight: bold;
-  line-height: 6px;
 }
 
 .model {
+  margin-top: -6px;
+  padding-left: 5px;
   font: 14px Arial, sans-serif;
   color: #1f2528;
   line-height: 18px;
 }
 
 .price {
+  padding-left: 16px;
   font: 18px Arial, sans-serif;
   color: #114165;
   font-style: italic;
@@ -644,21 +642,26 @@ input[type="password"] {
   color: #ffffff;
   letter-spacing: 1px;
   line-height: 25px;
+  cursor: pointer;
 }
 
 /*BRAND LOGO*/
 
 .brand_logo {
-  width: 725px;
+  width: 680px;
   margin: 0 auto;
-  padding: 42px 0 21px 0;
-  vertical-align: top;
+  padding: 42px 0 18px 0;
 }
 
-.brand_logo img {
-  display: block;
-  float: left;
-  padding: 0 5px;
+.brand_logo {
+  margin: 0 auto;
+}
+
+.brand_logo li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 3px;
+  list-style: none;
 }
 
 /*FOOTER*/
@@ -670,23 +673,23 @@ input[type="password"] {
 }
 
 .footer_menu {
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 11px;
+  text-align: center;
+  padding-top: 9px;
 }
 
 .footer_menu li {
   list-style: none;
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  border-right: 1px solid #bec6c9;
 }
 
 .footer_menu li a {
   display: block;
-  padding: 0 12px;
   text-decoration: none;
   font: 12px Arial, sans-serif;
   color: #bec6c9;
-  border-right: 1px solid #bec6c9;
 }
 
 .footer_menu li a:hover {
@@ -694,7 +697,7 @@ input[type="password"] {
 }
 
 .footer p {
-  padding-top: 15px;
+  padding-top: 13px;
   font: 10px Arial, sans-serif;
   color: #7f4740;
   text-align: center;

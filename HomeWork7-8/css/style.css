@@ -344,14 +344,7 @@ body {
   position: relative;
 }
 
-.updates__picture960 {
-  position: absolute;
-  top: -5px;
-  left: -66px;
-}
-
-.updates__picture768, .updates__picture480, .updates__picture320 {
-  display: none;
+.updates__picture {
   position: absolute;
   top: -5px;
   left: -66px;
@@ -683,14 +676,6 @@ body {
   margin-bottom: 20px;
 }
 
-.updates__picture768 {
-  display: block;
-}
-
-.updates__picture960, .updates__picture480, .updates__picture320 {
-  display: none;
-}
-
 .updates__read_more_960 {
   display: none;
 }
@@ -979,14 +964,6 @@ bottom: 10px;
   width: 70%;
 }
 
-.updates__picture480 {
-  display: block;
-}
-
-.updates__picture960, .updates__picture768, .updates__picture320 {
-  display: none;
-}
-
 .updates__read_more_768 {
   margin: -3px 0 0 0;
 }
@@ -1159,14 +1136,6 @@ width: 90%;
 
 .updates__info--second {
   margin-bottom: 28px;
-}
-
-.updates__picture320 {
-  display: block;
-}
-
-.updates__picture960, .updates__picture480, .updates__picture768 {
-  display: none;
 }
 
 /*BRANDS*/

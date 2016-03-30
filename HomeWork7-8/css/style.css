@@ -35,11 +35,10 @@ body {
 }
 
 .clearfix:after {
-  content: ".";
+  content: "";
   display: block;
-  height: 0;
   clear: both;
-  visibility: hidden;
+  height: 0;
 }
 
 .wrapper__mountains_bg {
@@ -126,13 +125,12 @@ body {
 }
 
 .iphone_img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   right: 75px;
   bottom: 44px;
-}
-
-.iphone_480 {
-  display: none;
 }
 
 .scroll__icon {
@@ -201,7 +199,7 @@ body {
 .about__column--right {
   float: left;
   width: 24%;
-  margin: 0 -12px 0 108px;
+  margin-left: 96px;
   position: relative;
 }
 
@@ -257,7 +255,8 @@ body {
 .sidebar {
   max-width: 960px;
   margin: 0 auto;
-  padding-bottom: 68px;
+  padding-bottom: 88px;
+  position: relative;
 }
 
 /*BLOG*/
@@ -265,20 +264,26 @@ body {
 .blog__sidebar {
   float:left;
   width: 36%;
-  height: 293px;
+  height: 247px;
   margin: 99px 0 0 22px;
   padding: 26px 40px 0 40px;
-  background: url(../img/blog.png) no-repeat;
+  background: #ffffff;
+  border: 1px solid #efefef;
   position: relative;
 }
 
-.blog__sidebar::before {
+.blog__sidebar::after {
   content: " ";
-  display: block;
   position: absolute;
-  width: 49px;
-  height: 49px;
-  background: url(../img/post.png) no-repeat;
+  border: 20px solid transparent;
+  border-top: 20px solid #ffffff;
+  border-right: 20px solid #ffffff;
+  bottom: -21px;
+  right: 41px;
+}
+
+.blog__picture {
+  position: absolute;
   top: 19px;
   left: -23px;
 }
@@ -303,10 +308,10 @@ body {
   color: #edbfff;
 }
 
-.scroll__blog {
+.scroll__blog_img {
   position: absolute;
-  bottom: 3px;
-  right: 168px;
+  bottom: 71px;
+  left: 194px;
 }
 
 /*UPDATES*/
@@ -314,7 +319,7 @@ body {
 .updates__sidebar {
   float: left;
   width: 47%;
-  margin: 125px 0 0 61px;
+  margin: 125px 0 0 59px;
 }
 
 .updates__sidebar .text {
@@ -339,35 +344,15 @@ body {
   position: relative;
 }
 
-.updates__info--first::before {
-  content: " ";
-  display: block;
+.updates__picture960 {
   position: absolute;
-  width: 49px;
-  height: 49px;
-  background: url(../img/post.png) no-repeat -49px 0;
   top: -5px;
   left: -66px;
 }
 
-.updates__info--second::before {
-  content: " ";
-  display: block;
+.updates__picture768, .updates__picture480, .updates__picture320 {
+  display: none;
   position: absolute;
-  width: 49px;
-  height: 49px;
-  background: url(../img/post.png) no-repeat -98px 0;
-  top: -4px;
-  left: -66px;
-}
-
-.updates__info--third::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 49px;
-  height: 49px;
-  background: url(../img/post.png) no-repeat -147px 0;
   top: -5px;
   left: -66px;
 }
@@ -442,12 +427,18 @@ body {
   padding: 87px 0 96px 0;
 }
 
-.logo__footer {
-  margin: 11px 0 13px 0;
+.logo__footer p {
+  font-size: 48px;
+  color: 454545;
+  text-shadow: 1px 2px 1px #ffffff;
+}
+
+.logo__footer span {
+  color: #b9b9b9;
 }
 
 .copyright__footer {
-  margin: 0 0 10px -2px;
+  margin: 6px 0 10px 0;
   font: 15px "Open Sans Light";
   font-style: italic;
   color: #cacaca;
@@ -617,7 +608,6 @@ body {
 }
 
 .about__column--middle::before, .about__column--right::before {
-  background: url(../img/icon_about.png) no-repeat;
   top: 7px;
   left: -52px;
 }
@@ -637,12 +627,17 @@ body {
 
 .sidebar {
   max-width: 768px;
+  padding-bottom: 86px;
 }
 
 /*BLOG*/
 
 .blog__sidebar {
   padding-right: 0;
+}
+
+.blog__sidebar::after {
+  display: none;
 }
 
 .header__blog {
@@ -662,14 +657,14 @@ body {
   height: 148px;
 }
 
-.scroll__blog {
-  right: 115px;
+.scroll__blog_img {
+  left: 138px;
 }
 
 /*UPDATES*/
 
 .updates__sidebar {
-  margin-left: 56px;
+  margin-left: 54px;
 }
 
 .hide__updates {
@@ -688,16 +683,12 @@ body {
   margin-bottom: 20px;
 }
 
-.updates__info--first::before {
-  background: url(../img/updates_picture768.png) no-repeat;
+.updates__picture768 {
+  display: block;
 }
 
-.updates__info--second::before {
-  background: url(../img/updates_picture768.png) no-repeat -50px 0;
-}
-
-.updates__info--third::before {
-  background: url(../img/updates_picture768.png) no-repeat -100px 0;
+.updates__picture960, .updates__picture480, .updates__picture320 {
+  display: none;
 }
 
 .updates__read_more_960 {
@@ -909,14 +900,8 @@ body {
 }
 
 .iphone_img {
-display: none;
-}
-
-.iphone_480 {
-display: block;
-position: absolute;
-right: 32px;
-bottom: -4px;
+right: 35px;
+bottom: 10px;
 }
 
 .scroll__icon {
@@ -958,10 +943,11 @@ bottom: -4px;
 
 .sidebar {
   max-width: 480px;
+  padding-bottom: 68px;
 }
 
 .blog__sidebar {
-  width: 76%;
+  width: 71%;
   margin: 70px 0 0 44px;
   padding: 20px 35px 5px 39px;
 }
@@ -981,26 +967,24 @@ bottom: -4px;
   height: 167px;
 }
 
-.scroll__blog {
-  right: 194px;
+.scroll__blog_img {
+  top: 365px;
+  left: 204px;
 }
 
 /*UPDATES*/
 
 .updates__sidebar {
-  margin: 39px 0 19px 83px;
+  margin: 83px 0 19px 83px;
   width: 70%;
 }
-.updates__info--first::before {
-  background: url(../img/updates_picture480.png) no-repeat 1px 0;
+
+.updates__picture480 {
+  display: block;
 }
 
-.updates__info--second::before {
-  background: url(../img/updates_picture480.png) no-repeat -47px 0;
-}
-
-.updates__info--third::before {
-  background: url(../img/updates_picture480.png) no-repeat -95px 0;
+.updates__picture960, .updates__picture768, .updates__picture320 {
+  display: none;
 }
 
 .updates__read_more_768 {
@@ -1096,12 +1080,13 @@ bottom: -4px;
 width: 90%;
 }
 
-.iphone_480 {
+.iphone_img {
   display: none;
 }
 
 .scroll__icon {
   max-width: 320px;
+  padding-bottom: 96px;
 }
 
 .scroll__image {
@@ -1113,7 +1098,7 @@ width: 90%;
 
 .about {
   max-width: 320px;
-  padding: 66px 0 43px 0;
+  padding: 66px 0 42px 0;
 }
 
 .about__column--left, .about__column--middle, .about__column--right {
@@ -1153,14 +1138,14 @@ width: 90%;
   left: 0;
 }
 
-.scroll__blog {
-  right: 75px;
+.scroll__blog_img {
+  left: 140px;
 }
 
 /*UPDATES*/
 
 .updates__sidebar {
-  margin: 39px 0 19px 19px;
+  margin: 83px 0 19px 19px;
   width: 90%;
 }
 
@@ -1172,16 +1157,16 @@ width: 90%;
   margin-bottom: 17px;
 }
 
-.updates__info--first::before {
-  background: url(../img/updates_picture320.png) no-repeat 1px 0;
+.updates__info--second {
+  margin-bottom: 28px;
 }
 
-.updates__info--second::before {
-  background: url(../img/updates_picture320.png) no-repeat -48px 0;
+.updates__picture320 {
+  display: block;
 }
 
-.updates__info--third::before {
-  background: url(../img/updates_picture320.png) no-repeat -96px 0;
+.updates__picture960, .updates__picture480, .updates__picture768 {
+  display: none;
 }
 
 /*BRANDS*/

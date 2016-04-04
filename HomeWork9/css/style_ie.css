@@ -1,0 +1,9 @@
+.wrapper__black_opacity_bg {
+  background: url(../img/opacity_ie.png);
+}
+
+.wrapper__purple_bg {
+  background: url(../img/gradient_ie.png);
+  border-top: 2px solid #33253a;
+  border-bottom: 2px solid #0d151b;
+}

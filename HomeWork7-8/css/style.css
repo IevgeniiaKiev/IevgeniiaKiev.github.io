@@ -50,8 +50,8 @@ body {
 
 .header {
   max-width: 960px;
-  margin: 0 auto;
-  margin-bottom: 166px;
+  margin: 0px auto 0px;
+  padding: 0 0 160px 0;
 }
 
 .logo__header {

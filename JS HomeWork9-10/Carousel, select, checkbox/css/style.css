@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+ h1 {
+   text-align: center;
+ }
+
+ .wrapper_carousel {
+   position: relative;
+   width: 800px;
+   height: 500px;
+   margin: 20px auto;
+   border: 8px solid #ffe6ff;
+   box-shadow: 0px 0px 0px 1px rgba(179,0,179,1);
+   border-radius: 10px;
+ }
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+img {
+  width: 800px;
+  height: 500px;
+}
+
+.jcarousel-prev,
+.jcarousel-next {
+  position: absolute;
+  top: 250px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: #b300b3;
+  background: #ffe6ff;
+  border-radius: 100px;
+  border: 1px solid #b300b3;
+}
+
+.jcarousel-prev {
+  left: -100px;
+}
+
+.jcarousel-next {
+  right: -100px;
+}
+
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.jcarousel-pagination a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #b300b3;
+  background: #ffe6ff;
+  border-radius: 100px;
+}
+
+.jcarousel-pagination a.active {
+  background: #ff66ff;
+  color: #fff;
+  }
+
+.wrapper_select {
+  margin: 0 0 50px 50px;
+  }
+
+.wrapper_checkbox {
+  margin: 0 0 50px 20px;
+}
+
+p {
+  margin: 10px;
+}
+
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: -2px;
+  cursor: pointer;
+  background: url(../img/checkbox-nice.png) no-repeat -2px -3px;
+  }
+
+.niceCheck .checkbox_js {
+  display: none;
+  }
+
+.label_js {
+  margin: 5px;
+}
+
+.checkbox {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.label {
+	cursor: pointer;
+}
+
+.label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+
+.checkbox:checked + .label:after {
+  background-position: 0 -17px;
+}
+
+.label:hover:after {
+  background-position: 0 -34px;
+}
+
+.checkbox:checked + .label:hover:after {
+  background-position: 0 -51px;
+}

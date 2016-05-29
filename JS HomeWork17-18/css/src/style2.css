@@ -1,0 +1,12 @@
+p {
+  text-align: justify;
+  color: #fff;
+  padding-bottom: 20px;
+  font: 20px Arial;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  font: 16px Arial;
+}

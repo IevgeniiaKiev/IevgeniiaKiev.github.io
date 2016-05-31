@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-img {
+.logo {
   display: block;
   margin: 0 auto;
   padding-top: 100px;
@@ -28,12 +28,20 @@ input[type=button] {
 }
 
 .searchResult {
-  width: 800px;
+  width: 1000px;
+  height: 400px;
   margin: 0 auto;
 }
 
-.imgContainer {
-  display: inline-block;
-  margin: 10px;
+p {
+  padding-top: 50px;
+  font-size: 30px;
   text-align: center;
+  color: red;
+}
+
+.img_result {
+  height: 150px;
+  padding: 10px;
+  display: inline-block;
 }

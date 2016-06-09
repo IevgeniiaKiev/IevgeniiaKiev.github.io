@@ -1,0 +1,17 @@
+{
+  "name": "js19-20-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib": "^0.11.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

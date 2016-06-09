@@ -1,0 +1,43 @@
+/*SLIDER*/
+.wrapper_carousel {
+  position: relative;
+  width: 1160px;
+  margin-bottom: 75px;
+}
+
+.jcarousel {
+   position: relative;
+   overflow: hidden;
+}
+
+.jcarousel ul {
+   width: 20000em;
+   position: relative;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.jcarousel li {
+   float: left;
+}
+
+
+.jcarousel-pagination {
+   position: absolute;
+   bottom: 15px;
+   left: 542px;
+}
+
+.jcarousel-pagination a {
+   display: inline-block;
+   margin: 5px;
+   width: 15px;
+   height: 15px;
+   background: url('../img/checkbox.png') no-repeat;
+   text-indent: -9999px;
+}
+
+.jcarousel-pagination a.active {
+   background: url('../img/checkbox.png') no-repeat 0 -21px;
+ }

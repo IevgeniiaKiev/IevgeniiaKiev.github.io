@@ -29,12 +29,14 @@ var result = '';
     result = 'Есть ошибки!';
   }
 
-$('body').append('<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">Результат прохождения теста</h4></div><div class="modal-body"><p>'+ result +'</p></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal" id="closeButton">Закрыть</button></div></div></div></div>');
-$(':submit').click(function(event) {
-  event.preventDefault();
-});
+$('body').append('<div class="modal fade" id="basicModal" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">Результат прохождения теста</h4></div><div class="modal-body"><p>'+ result +'</p></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal" id="closeButton">Закрыть</button></div></div></div></div>');
+
 $('#closeButton').click(function() {
   $(checkedAnswer).prop('checked', false);
+
+$('#basicModal').on('hidden.bs.modal', function () {
+  window.location.reload(true);
+});
 });
 });
 });

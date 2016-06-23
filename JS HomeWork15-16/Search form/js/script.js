@@ -2,7 +2,7 @@ $(function() {
 
 $('#searchButton').on('click', runSearch);
 
-$('#searchInput').keydown(function(event) {
+$('#searchInput').keyup(function(event) {
         if (event.keyCode === 13) {
             runSearch;
         };
@@ -14,8 +14,14 @@ $('#searchInput').keydown(function(event) {
         var searchKey = $('#searchInput').val();
 
         $.ajax({
-            url: 'https://pixabay.com/api/?key=2625359-f397bd2a457159fc8090d8204&q=' + searchKey + '&image_type=photo',
+            url: 'https://pixabay.com/api',
+            method: 'GET',
             dataType: 'jsonp',
+            data: {
+              key: '2625359-f397bd2a457159fc8090d8204',
+              q: searchKey,
+              image_type: 'photo',
+            },
             success: function (data) {
                 var result = data.hits;
 

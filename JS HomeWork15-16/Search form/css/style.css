@@ -21,7 +21,7 @@ input[type=text] {
   font: 16px Arial;
 }
 
-input[type=button] {
+button {
   width: 100px;
   height: 30px;
   font-size: 16px;

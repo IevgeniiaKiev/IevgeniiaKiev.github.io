@@ -42,6 +42,11 @@ $(function() {
             e.preventDefault();
             runSearch();
             $('.searchInput').val('');
-        })
+        });
 
+    $('#searchInput').keyup(function(e) {
+            if (e.keyCode === 13) {
+            runSearch();
+              };
+        });
 })

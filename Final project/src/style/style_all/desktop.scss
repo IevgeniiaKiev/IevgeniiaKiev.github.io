@@ -1,0 +1,77 @@
+@import "tablet.scss";
+
+.wrapper {
+  max-width: $desktop-width;
+}
+
+/*HEADER*/
+
+.header {
+  background-size: 100%;
+}
+
+.header__login {
+  margin-right: 230px;
+}
+
+.header__logo {
+  margin-left: 250px;
+}
+
+/*ARTICLES*/
+
+.articles__slider {
+  width: 960px;
+}
+
+.flexslider {
+  width: 300px;
+}
+
+.flexslider__content {
+  width: 300px;
+}
+.flexslider__img {
+  width: 300px;
+}
+
+.flex-prev,
+.flex-next {
+  top: 170px;
+}
+
+.flexslider:before,
+.flexslider:after {
+  top: 150px;
+}
+
+/*PARTNERS*/
+
+.partner {
+  width: 1000px;
+}
+
+.partner__info {
+  margin-left: 30px;
+}
+
+.partner__info__button {
+  margin-top: 40px;
+}
+
+/*ACTIVITY*/
+
+.activity {
+  width: 960px;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 31.2%;
+}
+
+/*FOOTER*/
+
+.footer {
+  padding: 20px 200px;
+}

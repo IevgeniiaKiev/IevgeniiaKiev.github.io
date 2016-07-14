@@ -24,36 +24,26 @@ li {
   font-size: 20px;
 }
 
-.item-del {
+.item-del,
+.item-edit,
+.item-save
+ {
   padding-left: 10px;
   color: #003311;
   font-size: 16px;
   cursor: pointer;
 }
 
-.item-edit {
-  padding-left: 20px;
-  color: #003311;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.item-save {
-  padding-left: 20px;
-  color: #003311;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.display {
-  display: none;
+.item-change,
+.item-value
+ {
+  font-size: 20px;
+  border: 1px solid #1aff66;
+  border-radius: 5px;
 }
 
 .item-value {
   margin-top: 10px;
-  font-size: 20px;
-  border: 1px solid #1aff66;
-  border-radius: 5px;
 }
 
 .item-add {

@@ -22,11 +22,10 @@
 
     <script type="text/template" id="list-template">
       <% for (var i = 0; i < data.length; i++) { %>
-        <li id="content"><%= data[i] %>
+        <li><%= data[i] %>
+          <span data-value="<%= data[i] %>" class="item-del">x</span>
+          <span data-value="<%= data[i] %>" class="item-edit">Edit</span>
         </li>
-        <span data-value="<%= data[i] %>" class="item-del">x</span>
-        <span class="item-edit">Edit</span>
-        <span class="item-save display">Save</span>
       <% }; %>
     </script>
   </body>

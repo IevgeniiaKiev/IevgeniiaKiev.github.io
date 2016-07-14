@@ -29,6 +29,24 @@ define (
 
      return self.data;
     };
+
+    self.editItem = function (item) {
+        $('span').attr('disabled',true);
+        var index = self.data.indexOf(item);
+
+        if (index === -1) {
+            return;
+        }
+        return [self.data[index],index];
+    };
+
+    self.saveItem = function (item, index) {
+        if (item.length === 0){
+            return;
+        }
+        $('span').removeAttr('disabled');
+        self.data.splice(index,0,item);
+    };
     }
 
     return new Model(['Learn HTML', 'Learn CSS', 'Learn JS']);

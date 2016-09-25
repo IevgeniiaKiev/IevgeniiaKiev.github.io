@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; }
+
+.container {
+  max-width: 1070px; }
+
+.top__container {
+  background: #00bff3; }
+
+/*HEADER*/
+.header__logo {
+  padding-top: 10px; }
+
+.header__logo__text {
+  display: block;
+  width: 140px;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #fff; }
+
+.header__telephone {
+  margin-top: 10px; }
+
+.header__networks {
+  float: right;
+  margin-top: 10px; }
+
+.header__telephone__text {
+  line-height: 20px;
+  font-size: 30px;
+  color: #fff;
+  display: inline-block; }
+
+.header__telephone__link {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-bottom-style: dashed; }
+  .header__telephone__link:hover {
+    color: #fff;
+    border: none;
+    text-decoration: none; }
+
+.header__networks__link--fb, .header__networks__link--google, .header__networks__link--insta, .footer__networks__link--fb, .footer__networks__link--google, .footer__networks__link--insta {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background: url("../img/social_networks.png") no-repeat; }
+  .header__networks__link--fb:hover, .header__networks__link--google:hover, .header__networks__link--insta:hover, .footer__networks__link--fb:hover, .footer__networks__link--google:hover, .footer__networks__link--insta:hover {
+    background: url("../img/social_networks.png") no-repeat -120px 0; }
+
+.header__networks__link--google {
+  background: url("../img/social_networks.png") no-repeat -40px 0; }
+  .header__networks__link--google:hover {
+    background: url("../img/social_networks.png") no-repeat -160px 0; }
+
+.header__networks__link--insta {
+  background: url("../img/social_networks.png") no-repeat -80px 0; }
+  .header__networks__link--insta:hover {
+    background: url("../img/social_networks.png") no-repeat -200px 0; }
+
+/*ABOUT HOTEL*/
+.hotel {
+  position: relative; }
+
+.hotel__img {
+  width: 100%; }
+
+.hotel__tour {
+  padding: 10px;
+  width: 100%;
+  background: rgba(255, 255, 0, 0.7); }
+
+.hotel__tour__text--country, .hotel__tour__text--code, .hotel__tour__text--articul {
+  display: block;
+  margin: 0 auto;
+  width: 145px;
+  text-align: center;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  font-size: 25px; }
+
+.hotel__tour__text--code {
+  font-size: 14px; }
+
+.hotel__tour__text--articul {
+  width: 110px;
+  font-size: 24px;
+  color: #fff;
+  background: #000; }
+
+.hotel__info__about__link {
+  display: inline;
+  font-family: "Trebuchet MS";
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black; }
+  .hotel__info__about__link:hover {
+    color: black; }
+
+.hotel__info__about--star {
+  display: inline-block;
+  width: 90px;
+  height: 28px;
+  margin-left: 15px;
+  background: url("../img/star.png"); }
+
+.hotel__info__about--price {
+  display: inline;
+  font-family: "Trebuchet MS";
+  font-size: 35px;
+  font-weight: bold; }
+
+/*ABOUT HOTEL RATE*/
+.hotel__info__rate {
+  margin: 10px 0; }
+
+.hotel__info__rate--recall {
+  display: inline-block;
+  vertical-align: middle;
+  width: 97px;
+  font-size: 14px;
+  font-weight: bold; }
+
+.recall {
+  color: #777; }
+
+.hotel__info__rate--total {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  margin: 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  background: #00bff3;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  color: #fff; }
+
+.hotel__info__rate--wrapper {
+  display: inline-block;
+  width: 279px;
+  vertical-align: middle; }
+
+.hotel__info__rate--room, .hotel__info__rate--food, .hotel__info__rate--service, .hotel__info__rate--infrast {
+  display: inline-block;
+  width: 42px;
+  font-size: 14px;
+  font-weight: bold; }
+
+.rate__head {
+  color: #777; }
+
+.hotel__info__rate--food {
+  width: 57px; }
+
+.hotel__info__rate--service {
+  width: 50px; }
+
+.hotel__info__rate--infrast {
+  width: 118px; }
+
+.hotel__info__days {
+  display: inline-block;
+  position: relative;
+  width: 170px;
+  float: right;
+  text-align: center; }
+
+.hotel__info__days--320 {
+  display: inline-block;
+  height: 80px;
+  margin: 0;
+  line-height: 80px;
+  font-family: "Trebuchet MS";
+  font-size: 100px;
+  color: #777; }
+
+.hotel__info__days--sunny {
+  display: inline-block;
+  height: 60px;
+  margin: 0;
+  line-height: 25px;
+  font-size: 30px; }
+
+/*EXTREM TOURS*/
+.extreme__img {
+  width: 100%; }
+
+.extreme__text__name__head {
+  display: inline-block;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  font-size: 30px;
+  color: #000; }
+  .extreme__text__name__head:hover {
+    color: #000;
+    border-bottom: 1px solid #777;
+    text-decoration: none; }
+
+.extreme__text__name__price {
+  float: right;
+  line-height: 50px;
+  display: inline-block;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  font-size: 50px;
+  color: #000; }
+
+.extreme__text__name__note, .extreme__text__name__discount {
+  display: inline-block;
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  color: #777; }
+
+.extreme__text__name__discount {
+  font-size: 20px;
+  float: right;
+  position: relative; }
+
+.extreme__text__name__discount:before {
+  border-bottom: 1px solid red;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%; }
+
+/*TEXT SECTION*/
+.about__head {
+  margin-bottom: 25px;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  font-weight: bold; }
+
+.about__text__entry {
+  font-size: 16px;
+  font-weight: bold; }
+
+.about__head3 {
+  font-size: 22px;
+  font-weight: bold; }
+
+.about__text__marked {
+  padding: 20px;
+  margin: 20px 0;
+  margin-left: 30px;
+  border-left: 5px solid #00bff3;
+  border-radius: 3px;
+  background: #e1f8fe; }
+
+.about__head4 {
+  font-size: 16px;
+  font-weight: bold; }
+
+.about__table th {
+  font-size: 12px; }
+
+.about__list {
+  list-style-type: none;
+  margin-left: 10px; }
+
+/*RIGHT SECTION*/
+.text__section {
+  position: relative; }
+
+.fact {
+  position: absolute;
+  top: 300px;
+  right: 0; }
+
+.about__coefficient {
+  font-size: 100px;
+  font-family: "Trebuchet MS";
+  color: #777; }
+
+.about__whr {
+  font-family: "Trebuchet MS";
+  font-size: 30px; }
+
+.about__text__woman {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  color: #777; }
+
+/*FOOTER*/
+.footer {
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 1px solid #777; }
+
+.footer__text {
+  display: inline;
+  font-size: 12px; }
+
+.footer__company__link {
+  display: inline;
+  font-size: 12px;
+  color: #00bff3;
+  text-decoration: none; }
+  .footer__company__link:hover {
+    color: #00bff3;
+    text-decoration: underline; }
+
+.footer__networks {
+  float: right;
+  width: 155px; }
+
+.footer__networks__link--fb {
+  background: url("../img/social_networks.png") no-repeat 0 -38px; }
+  .footer__networks__link--fb:hover {
+    background: url("../img/social_networks.png") no-repeat -120px -38px; }
+
+.footer__networks__link--google {
+  background: url("../img/social_networks.png") no-repeat -40px -38px; }
+  .footer__networks__link--google:hover {
+    background: url("../img/social_networks.png") no-repeat -160px -38px; }
+
+.footer__networks__link--insta {
+  background: url("../img/social_networks.png") no-repeat -80px -38px; }
+  .footer__networks__link--insta:hover {
+    background: url("../img/social_networks.png") no-repeat -200px -38px; }
+
+@media only screen and (min-width: 418px) {
+  .header__logo__img {
+    display: block;
+    float: left;
+    margin-top: 5px; }
+  .header__logo__text {
+    display: inline-block;
+    padding-left: 10px; }
+  .hotel__info__rate--wrapper {
+    width: 320px; }
+  .hotel__info__rate--room, .hotel__info__rate--food, .hotel__info__rate--service, .hotel__info__rate--infrast,
+  .hotel__info__rate--food,
+  .hotel__info__rate--service {
+    margin-right: 10px; } }
+
+@media only screen and (min-width: 600px) {
+  .hotel__tour {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%; } }
+
+@media only screen and (min-width: 768px) {
+  .header__telephone {
+    margin-top: 45px;
+    width: 300px; }
+  .header__networks {
+    margin-top: 35px;
+    width: 155px; }
+  .hotel__tour {
+    bottom: 50px; }
+  .hotel__info {
+    margin-top: 20px; }
+  .about__head {
+    font-size: 50px; } }
+
+@media only screen and (min-width: 1024px) {
+  .header__logo {
+    margin: 15px 0; }
+  .header__telephone {
+    padding-left: 80px; }
+  .header__telephone__text,
+  .header__telephone__link {
+    float: none; }
+  .hotel__info--triangle {
+    position: relative;
+    width: 170px;
+    height: 141px; }
+  .hotel__info--triangle:after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    top: -85px;
+    border-left: 330px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 85px solid #fff; }
+  .hotel__info__days {
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    right: 10px; }
+  .hotel__info__about--star {
+    margin: 0 30px 0 25px; }
+  .hotel__info__rate {
+    margin-top: 20px; }
+  .hotel__info__rate--total {
+    margin-left: 30px;
+    padding-top: 5px;
+    font-size: 24px; }
+  .hotel__info__rate--wrapper {
+    width: 500px; }
+  .hotel__info__rate--room, .hotel__info__rate--food, .hotel__info__rate--service, .hotel__info__rate--infrast {
+    font-size: 16px;
+    margin: 0 10px 0 10px; }
+  .extrem {
+    margin-top: 10px; }
+  .extreme__text__name__head {
+    padding-top: 20px; } }
+
+@media only screen and (min-width: 1366px) {
+  .header__telephone {
+    width: 500px;
+    padding-left: 160px; } }

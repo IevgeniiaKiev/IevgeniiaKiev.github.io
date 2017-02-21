@@ -101,6 +101,7 @@
    /* centre the content in the parallax layers */
   .title {
     text-align: center;
+    color: #fff;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -117,12 +118,11 @@
     z-index: 5; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: rgb(102,204,102);
+    background: #10387c;
   }
 
   #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
-    color: white;
   }
   #group2 .parallax__layer--back {
     background: url('../img/space.jpg') no-repeat top center;
@@ -133,7 +133,7 @@
     z-index: 4; /* slide over group 2 and 4 */
   }
   #group3 .parallax__layer--base {
-    background: rgb(102,204,102);
+    background: #10387c;
   }
 
   #group4 {
@@ -145,22 +145,8 @@
   }
 
   #group5 {
-    z-index: 3; /* slide over group 4 and 6 */
-  }
-  #group5 .parallax__layer--base {
-    background: rgb(214,229,100);
-  }
-
-  #group6 {
-    z-index: 2; /* slide under group 5 and 7 */
-  }
-  #group6 .parallax__layer--back {
-    background: rgb(245,235,100);
-  }
-
-  #group7 {
     z-index: 3; /* slide over group 7 */
   }
-  #group7 .parallax__layer--base {
-    background: rgb(255,241,100);
+  #group5 .parallax__layer--base {
+    background: #10387c;
   }
